@@ -5,16 +5,15 @@ Repository dedicated to the Quadratic Min Cost Flow Optimization project, implem
 
 Consider the optimization problem:
 
-\[ \min \{x^T Q x + q^T x : Ex = b, 0 \leq x \leq u\} \quad  \]
+                     min {x^T Q x + q^T x : Ex = b, 0 ≤ x ≤ u}
+
 
 where:
-- \( x, q \in \mathbb{R}^m \)
-- \( Q \in \mathbb{R}^{m \times m} \) is a positive semidefinite diagonal matrix
-- \( E \in \mathbb{R}^{n \times m} \) is the node-arc incidence matrix of a connected graph with \( n \) nodes and \( m \) edges
-- \( b \in \mathbb{R}^n \) is the node balance vector of the graph
-- \( u \in \mathbb{R}^m \) is a vector of positive values representing the upper capacity of each edge in the graph.
-
-
+- `x, q` are vectors in ℝᵐ
+- `Q` is a positive semidefinite diagonal matrix in ℝᵐˣᵐ
+- `E` is the node-arc incidence matrix of a connected graph with `n` nodes and `m` edges
+- `b` is the node balance vector of the graph in ℝⁿ
+- `u` is a vector of positive values in ℝᵐ representing the upper capacity of each edge in the graph.
 
 We aim at implementing an **optimization algorithm** A of the class of **Frank-Wolfe (FW) methods**, based on the conditional gradient (CG), designed to solve constrained and convex optimization problems.
 
